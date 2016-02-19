@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
@@ -19,27 +19,21 @@
 #
 ##############################################################################
 {
-    "name": "Management System - Manual",
-    "version": "8.0.1.1.0",
+    "name": "Document Management - Wiki - Work Instructions",
+    "version": "9.0.1.0.0",
     "author": "Savoir-faire Linux,Odoo Community Association (OCA)",
     "website": "http://www.savoirfairelinux.com",
     "license": "AGPL-3",
-    "category": "Management System",
-    "description": """
-This module adds a menu item "Manual" and is a dependency of:
- * document_page_environment_manual
- * document_page_health_safety_manual
- * mgmtsystem_quality
-    """,
+    "category": "Generic Modules/Others",
     "depends": [
-        'document_page_approval',
         'mgmtsystem',
+        'document_page_approval',
     ],
     "data": [
         'data/document_page.xml',
 
-        'views/document_page.xml',
+        'views/document_page_work_instructions.xml',
     ],
     "demo": [],
-    'installable': False,
+    'installable': True,
 }
